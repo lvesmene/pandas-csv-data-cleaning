@@ -1,34 +1,31 @@
 <!-- -*- coding: utf-8 -*- -->
-## pandas-csv-data-cleaning
+# pandas-csv-data-cleaning
 基于Pandas实现电商用户行为数据（CSV/Excel）的基础清洗，包含缺失值处理、时间格式转换、编码映射、业务逻辑校验等核心功能。
 
 ## 项目结构
 
-<details>
-<summary>点击展开/折叠数据字段说明</summary>
+```text
 pandas-csv-data-cleaning/
 ├── data/
-│   ├── raw/          # Raw data
-│   │   └── UserBehavior--1.csv
-│   └── processed/    # Cleaned data
-│       └── cleaned_user_behavior_final.csv
+│ ├── cleaned_duplicates_removed.csv
+│ ├── cleaned_missing_handled.csv
+│ ├── cleaned_numeric_fixed.csv
+│ ├── cleaned_time_standardized.csv
+│ ├── cleaned_user_behavior_final.csv
+│ └── UserBehavior--1.csv
 ├── scripts/
-│   ├── preprocess/   # Preprocessing scripts (missing values, duplicates)
-│   │   ├── handle_missing_values.py
-│   │   └── remove_duplicates.py
-│   └── transform/    # Transformation scripts (numeric, time)
-│       ├── clean_numeric_fields.py
-│   └── standardize_time_format.py
-├── .gitignore        # Ignore Python cache and temp files
+│ ├── clean_numeric_fields.py
+│ ├── comprehensive_cleaning.py
+│ ├── handle_missing_values.py
+│ ├── remove_duplicates.py
+│ └── standardize_time_format.py
 └── README.md
 ```
-<details>
 
 ## 📋 数据说明
 
 <details>
-<summary>点击展开/折叠数据字段说明</summary>
-
+<summary>点击展开/折叠环境依赖信息</summary>
 原始数据`UserBehavior--1.csv`是电商用户行为数据，包含11个字段：
 | 字段名        | 含义               | 数据类型   |
 |--------------|-------------------|-----------|
@@ -45,7 +42,6 @@ pandas-csv-data-cleaning/
 | comment      | 用户评论           | 字符串     |
 
 </details>
-
 
 ## 🛠️ 环境依赖
 
