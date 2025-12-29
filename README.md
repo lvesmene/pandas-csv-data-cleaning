@@ -3,7 +3,8 @@
 基于Pandas实现电商用户行为数据（CSV/Excel）的基础清洗，包含缺失值处理、时间格式转换、编码映射、业务逻辑校验等核心功能。
 
 ## 项目结构
-
+<details>
+<summary>点击展开/折叠环境依赖信息</summary>
 ```text
 pandas-csv-data-cleaning/
 ├── data/
@@ -21,25 +22,28 @@ pandas-csv-data-cleaning/
 │ └── standardize_time_format.py
 └── README.md
 ```
+<details>
 
 ## 📋 数据说明
 
 <details>
 <summary>点击展开/折叠环境依赖信息</summary>
+
 原始数据`UserBehavior--1.csv`是电商用户行为数据，包含11个字段：
-| 字段名        | 含义               | 数据类型   |
-|--------------|-------------------|-----------|
-| user_id      | 用户唯一ID         | 整数       |
-| goods_id     | 商品唯一ID         | 整数       |
-| category_id  | 商品分类ID         | 整数       |
-| behavior     | 用户行为（PV/BUY）  | 字符串     |
-| timestamp    | 行为时间戳（秒级）   | 整数       |
-| sex          | 用户性别（0/1）     | 整数       |
-| address      | 用户所在城市        | 字符串     |
-| device       | 访问设备           | 字符串     |
-| price        | 商品单价           | 浮点数     |
-| amount       | 购买数量           | 整数       |
-| comment      | 用户评论           | 字符串     |
+
+| 字段名        | 含义                   | 数据类型  |
+|--------------|-----------------------|----------|
+| user_id      | 用户唯一ID             | 整数      |
+| goods_id     | 商品唯一ID             | 整数      |
+| category_id  | 商品分类ID（0表示无分类）| 整数      |
+| behavior     | 用户行为（PV/BUY）     | 字符串     |
+| timestamp    | 行为时间戳（秒级）      | 整数       |
+| sex          | 用户性别（0/1）        | 整数       |
+| address      | 用户所在城市           | 字符串     |
+| device       | 访问设备              | 字符串     |
+| price        | 商品单价              | 浮点数     |
+| amount       | 购买数量              | 整数       |
+| comment      | 用户评论              | 字符串     |
 
 </details>
 
