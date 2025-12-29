@@ -6,7 +6,7 @@
 ## 项目结构
 
 <details>
-<summary>点击展开/折叠环境依赖信息</summary>
+<summary>点击展开/折叠项目目录结构</summary>
 
 ```text
 pandas-csv-data-cleaning/
@@ -26,12 +26,12 @@ pandas-csv-data-cleaning/
 └── README.md
 ```
 
-<details>
+</details>
 
 ## 📋 数据说明
 
 <details>
-<summary>点击展开/折叠环境依赖信息</summary>
+<summary>点击展开/折叠数据字段说明</summary>
 
 原始数据`UserBehavior--1.csv`是电商用户行为数据，包含11个字段：
 
