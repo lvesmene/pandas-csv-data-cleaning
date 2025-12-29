@@ -1,28 +1,28 @@
+<!-- -*- coding: utf-8 -*- -->
 ## pandas-csv-data-cleaning
 基于Pandas实现电商用户行为数据（CSV/Excel）的基础清洗，包含缺失值处理、时间格式转换、编码映射、业务逻辑校验等核心功能。
 
 ## 项目结构
 
+<details>
+<summary>点击展开/折叠数据字段说明</summary>
 pandas-csv-data-cleaning/
 ├── data/
-│   ├── raw/          # 原始数据
+│   ├── raw/          # Raw data
 │   │   └── UserBehavior--1.csv
-│   └── processed/    # 最终清洗结果
+│   └── processed/    # Cleaned data
 │       └── cleaned_user_behavior_final.csv
 ├── scripts/
-│   ├── preprocess/   # 预处理脚本（缺失值、重复值）
+│   ├── preprocess/   # Preprocessing scripts (missing values, duplicates)
 │   │   ├── handle_missing_values.py
 │   │   └── remove_duplicates.py
-│   └── transform/    # 转换脚本（数值、时间）
+│   └── transform/    # Transformation scripts (numeric, time)
 │       ├── clean_numeric_fields.py
 │   └── standardize_time_format.py
-├── .gitignore        # 过滤Python缓存、临时文件
+├── .gitignore        # Ignore Python cache and temp files
 └── README.md
 ```
-
-</details>
-
-
+<details>
 
 ## 📋 数据说明
 
@@ -30,8 +30,8 @@ pandas-csv-data-cleaning/
 <summary>点击展开/折叠数据字段说明</summary>
 
 原始数据`UserBehavior--1.csv`是电商用户行为数据，包含11个字段：
-| 字段名       | 含义               | 数据类型   |
-|--------------|--------------------|------------|
+| 字段名        | 含义               | 数据类型   |
+|--------------|-------------------|-----------|
 | user_id      | 用户唯一ID         | 整数       |
 | goods_id     | 商品唯一ID         | 整数       |
 | category_id  | 商品分类ID         | 整数       |
@@ -79,7 +79,6 @@ python clean_numeric_fields.py
 # 4. 标准化时间格式
 python standardize_time_format.py
 ```
-
 每一步的结果会保存在data/目录下（以cleaned_开头）
 
 ### 方式 2：一键综合清洗（适合直接使用）
